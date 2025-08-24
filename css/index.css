@@ -1,0 +1,162 @@
+@font-face {
+    font-family: RoadRadioBold;
+    src: url(../assets/fonts/RoadRadio-Bold.ttf);
+}
+
+@font-face {
+    font-family: RoadRadioThin;
+    src: url(../assets/fonts/RoadRadio-Thin.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: RoadRadioThin;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    border-width: 1px;
+}
+
+.tagline1 {
+    font-family: RoadRadioBold;
+    font-size: 3rem;
+}
+
+.tagline2 {
+    font-size: 3rem;
+}
+
+.app-preview {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.info-and-features-container {
+    background-color: #d59f67;
+    font-size: 1rem;
+    padding: 2% 2%;
+}
+
+.features-container {
+    padding-bottom: 1vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.brief-desc {
+    padding-top: 1vh;
+}
+
+.feature {
+    border: 1px solid rgb(199, 199, 199);
+    margin-top: 2vh;
+    height: 140px;
+    display: grid;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 0 10%;
+    max-width: 180px;
+    text-align: center;
+}
+
+footer {
+    color: black;
+    font-size: .8rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+footer a {
+    color: black;
+}
+
+header,
+.taglines-container,
+.product-preview-container {
+    margin: 2vh 5%;
+}
+
+@media screen and (min-width: 425px) {
+    .features-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .info-and-features-container {
+        padding: 0 7%;
+    }
+
+    .tagline1 {
+        font-size: 3.5rem;
+        margin-top: 10vh;
+    }
+
+    .tagline2 {
+        font-size: 3.5rem;
+        margin-bottom: 5vh;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 70%;
+    }
+
+    .brief-desc {
+        max-width: 70%;
+    }
+
+    .app-preview {
+        height: 500px;
+        width: auto;
+    }
+
+    .product-preview-container {
+        position: absolute;
+        right: 5vw;
+        top: 15vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .tagline1 {
+        font-size: 5rem;
+    }
+
+    .tagline2 {
+        font-size: 5rem;
+    }
+
+    .app-preview {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .product-preview-container {
+        top: 10vh;
+    }
+}
